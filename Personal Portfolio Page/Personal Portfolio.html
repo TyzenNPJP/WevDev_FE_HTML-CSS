@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+        }
+        header{
+            height: 15%;
+            width: 100%;
+            background-color: rgb(228, 108, 108);
+            position: fixed;
+        }
+        nav{
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px 10px 10px 10px;
+        }
+        .nav-elements{
+            padding: 15px;
+            text-align: center;
+            font-size: 22px;
+            color:white;
+        }
+        .nav-elements:hover{
+            background-color: gray;
+        }
+        .div1{
+            background-color: cadetblue;
+            width: 100%;
+            height: 750px;
+            border: solid black;
+        }
+        .div2{
+            background: linear-gradient(45deg, rgb(245, 89, 5), rgb(9, 246, 203));
+            width: 100%;
+            height: 1500px;
+        }
+        .div3{
+            background-color:rgb(42, 52, 63);
+            width:100%;
+            height: 750px;
+            text-align: center;
+            color: white;
+        }
+        .grids{
+            display: grid;
+            grid-template-columns: 32% 32% 32%;
+            grid-template-rows: 50% 50%;
+            row-gap: 20px;
+            column-gap: 20px;
+        }
+        .photo-size{
+            width: 400px;
+            height: 500px;
+        }
+        .photo-div{
+            background-color: rgb(42, 52, 63); 
+            padding: 20px; 
+            margin-left: 40px; 
+            margin-right: 40px;
+            border-radius: 20px 20px 0px 0px;
+        }
+        .h2{
+            text-align: center;
+        }
+        .white-text{
+            color: white;
+        }
+        .white-text:hover{
+            color: red;
+        }
+        .div-flex{
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+        }
+        .normalize{
+            text-decoration: none;
+        }
+        .anim{
+            position: relative;
+            color: white;
+        }
+        .anim:hover{
+            animation-name: shift;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            /* Puts the animation at halt upon 100% */
+        }
+        @keyframes shift{
+            0%{
+                top: 0px;
+            }
+            100%{
+                top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-elements"><a href="#welcome-section"><p><b>About</b></p></a></div>
+            <div class="nav-elements"><a href="projects"><p><b>Work</b></p></div></a></div>
+            <div class="nav-elements"><a href="#contacts"><p><b>Contact</b></p></a></div>
+        </nav>
+    </header>
+
+    <div class="div1" id="welcome-section">
+        <h1 style="margin-top: 250px; color:white";>Hey Guys! This is my portfolio. I'm Taizan.</h1>
+        <h4 style="color:white;"><i>Front-End Web Dev / Game Dev</i></h4>
+    </div>
+
+    <div class="div2" id="projects">
+        <h2 style="padding-top: 100px;"><u>Here are some of my projects</u></h2>
+        <div class="grids">
+            <div class="project-title">
+                <a href="https://codepen.io/inteletronx/pen/rNpvxRj" class="normalize">
+                    <div class="photo-div"><h2 class="white-text">Tribute Page</h2></div><img src="https://i.postimg.cc/vmp75bhd/P1.png" alt="Tribute Page Photo" class="photo-size">
+                </a>
+            </div>
+            <div class="project-title">
+                <a href="https://codepen.io/inteletronx/pen/bGaMpGG" class="normalize">
+                    <div class="photo-div"><h2 class="white-text">Survey Form Page</h2></div><img src="https://i.postimg.cc/MZ00jkjh/P2.png" alt="Survey Form Page photo" class="photo-size">
+                </a>
+            </div>
+            <div class="project-title">
+                <a href="https://codepen.io/inteletronx/pen/ZEvowGB" class="normalize">
+                    <div class="photo-div"><h2 class="white-text">Product Landing Page</h2></div><img src="https://i.postimg.cc/GhqkqkKK/P3.png" alt="Product Langin Page photo" class="photo-size">
+                </a>
+            </div>
+            <div class="project-title">
+                <a href="https://codepen.io/inteletronx/pen/VwyxgvB" class="normalize">
+                    <div class="photo-div"><h2 class="white-text">Tech Doc Page</h2></div><img src="https://i.postimg.cc/hjWxfM4D/P4.png" alt="Tech Doc Page photo" class="photo-size">
+                </a>
+            </div>
+            <div class="project-title">
+                <a href="https://codepen.io/inteletronx/pen/JjMvxRp" class="normalize">
+                    <div class="photo-div"><h2 class="white-text">Tax Calculator Page</h2></div><img src="https://i.postimg.cc/J0RkQnBS/P5.png" alt="Tax Calculator Page photo" class="photo-size">
+                </a>
+            </div>
+            <div class="project-title">
+                <a href="https://codepen.io/inteletronx/pen/xxpjMRY" class="normalize">
+                    <div class="photo-div"><h2 class="white-text">Tax Home Page</h2></div><img src="https://i.postimg.cc/NffX9KtH/P6.png" alt="Tax Home Page photo" class="photo-size">
+                </a>
+            </div>
+        </div>                                         
+    </div>
+
+    <div class="div3" id="contacts">
+        <h1 style="padding-top: 250px;">Let's work together!</h1>
+        <h3>How do you like your coffee?</h3>
+
+        <div class="div-flex">
+            <div class="anim" style="padding: 50px;"><a href="https://www.facebook.com/taizan.lama.3/" style="text-decoration: none; color:white;"><h2>Facebook</h2></a></div>
+            <div id="profile-link" class="anim" style="padding: 50px;"><a href="https://github.com/inteletronx" style="text-decoration: none; color:white;"><h2>Github</h2></a></div>
+            <div class="anim" style="padding: 50px;"><a href="mailto: taizanlama.edu.gmail.com" style="text-decoration: none; color:white;"><h2>Send a mail</h2></a></div>
+            <div class="anim" style="padding: 50px;"><a href="tel: +9779810223470" style="text-decoration: none; color:white;"><h2>Call me</h2></a></div>
+        </div>
+
+        <hr>
+        <footer>
+            <h3>@Created for FreeCodeCamp</h3>
+        </footer>
+    </div>
+
+</body>
+</html>

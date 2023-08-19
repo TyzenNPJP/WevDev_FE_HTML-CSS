@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /*background-image: url('https://wallpapertops.com/walldb/original/6/2/f/126529.jpg');*/
+            background-image: url('image.jpg');
+            background-size: cover;
+        }
+        .center1{
+            text-align: center;
+        }
+        p{
+            font-size: 18px;
+            text-align: left;
+        }
+        .center-card{
+            background-color: rgb(184, 182, 182);
+            margin: auto;
+            padding: 50px;
+            max-width: 500px;
+            border-radius: 10px;
+            background: linear-gradient(130deg, #CCFFFF, #FFCCCC)
+        }
+        .box{
+            border-radius: 3px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            width: 100%;
+            min-height: 30px;
+        }
+        .just-left{
+            float:left;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 class="center1" id="title"> freeCodeCamp Survey form </h1>
+    <p class="center1" id="description"> <em> Thank you for taking the time to help us improve the platform. </em> </p>
+
+    <div class="center-card">
+
+        <div class="center1">
+            <form id="survey-form">
+                <label id="name-label"><p>Name</p></label>
+                <input type="text" class="box" placeholder="Enter your Name" id="name">
+                <label id="email-label"><p>Email</p> </label>
+                <input type="email" required class="box" placeholder="Enter your Email" id="email">
+                <label id="number-label"><p>Age (Optional)</p></label>
+                <input type="number" class="box" placeholder="Enter your Age" id="number" min="0" max="150">
+                
+                <p>Would you recommend freeCodeCamp to your friend?</p>
+                <input class="just-left" type="radio" name="r-btn1"> <p>Definitely</p>
+                <input class="just-left" type="radio" name="r-btn2"> <p>Maybe</p>
+                <input class="just-left" type="radio" name="r-btn3"> <p>Not sure</p>
+
+                <p>What is your favorite feature of freeCodeCamp?</p>
+                <select class="form-select" aria-label="Default select example" style="width:100%" id="dropdown">
+                    <option selected>Select an Option</option>
+                    <option value="1">Challenges</option>
+                    <option value="2">Projects</option>
+                    <option value="3">Community</option>
+                    <option value="4">Open Source</option>
+                </select>
+
+                <p>What would you like to see improved? (Check all that apply)</p>
+                <input type="checkbox" class="just-left" value="1"> <p>Front-end Projects</p>
+                <input type="checkbox" class="just-left" value="2"> <p>Back-end Projects</p>
+                <input type="checkbox" class="just-left" value="3"> <p>Data Visualization</p>
+                <input type="checkbox" class="just-left" value="4"> <p>Challenges</p>
+                <input type="checkbox" class="just-left" value="5"> <p>Open Source Community</p>
+                <input type="checkbox" class="just-left" value="6"> <p>Gitter Help Rooms</p>
+                <input type="checkbox" class="just-left" value="7"> <p>Videos</p>
+                <input type="checkbox" class="just-left" value="8"> <p>City MeetUps</p>
+                <input type="checkbox" class="just-left" value="9"> <p>Wiki</p>
+                <input type="checkbox" class="just-left" value="10"> <p>Forums</p>
+                <input type="checkbox" class="just-left" value="11"> <p>Additional Courses</p>
+
+                <p>Any comments or suggestions?</p>
+                <textarea style="float:left; width:100%;"></textarea>
+
+                <button type="submit" style="position: relative; top:20px" id="submit"> Submit </button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

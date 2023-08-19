@@ -1,0 +1,1 @@
+This project requires the computer in which it is opened on to have the image file in the same folder as the HTML file.

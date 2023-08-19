@@ -1,0 +1,1 @@
+This project requires the computer in which it is opened on to be online in order for the images to work.
